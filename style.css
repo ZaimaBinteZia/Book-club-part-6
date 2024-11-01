@@ -1,0 +1,206 @@
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav {
+    background-color: rgb(226, 195, 149)
+}
+
+#intro {
+    background-color: rgba(125, 84, 40, 0.629)
+}
+
+.main-section-content h2 {
+    background-color: rgba(125, 80, 51, 0.882)
+}
+
+#bestsellers,
+footer {
+    background-color: rgb(217, 186, 139)
+}
+
+header,
+nav,
+#intro,
+#main-section,
+#bestsellers,
+footer {
+    border: 2px solid rgba(99, 47, 10, 0.878);
+    border-radius: 10px;
+    text-align: center;
+    margin: 50px;
+    box-shadow: 0 0 10px rgb(61, 30, 9)
+}
+
+a {
+    color: rgb(41, 158, 41);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(2, 7, 2)
+}
+
+h1,
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+table {
+    border: 2px solid rgb(15, 7, 2);
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+ul>li {
+    list-style-type: none
+}
+
+footer {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+button {
+    margin: 10px 0;
+    border-color: black;
+    border-radius: 4px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+button:hover {
+    background-color: rgba(143, 82, 52, 0.679);
+}
+
+footer p:first-child {
+    background-color: rgba(72, 34, 1, 0.252);
+}
+
+#bestsellers {
+    text-align: left;
+}
+
+header img {
+    width: 400px;
+
+}
+
+#intro {
+    padding: 0 40px 20px 40px;
+}
+
+header,
+.main-section-content,
+#bestsellers,
+footer {
+    padding: 30px;
+}
+
+video {
+    width: 350px;
+    height: 250px;
+}
+
+iframe {
+    width: 350px;
+    height: 250px;
+}
+
+h1 {
+    text-shadow: 2px 3px 10px rgb(255, 188, 80)
+}
+
+nav {
+    position: sticky;
+    top: 0;
+}
+
+button {
+    position: fixed;
+    bottom: 0;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    background-color: rgba(244, 233, 212, 0.823);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+#teachers {
+    display: flex;
+    justify-content: center;
+}
+
+.teacher-info {
+    background-color: rgba(178, 147, 101, 0.678);
+    margin: 10px;
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgb(65, 44, 7)
+}
+
+#videos div {
+    display: flex;
+    justify-content: center;
+}
+
+video,
+iframe {
+    min-width: 100px;
+    margin: 5px;
+}
+
+footer p,
+footer address {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#bestsellers {
+    grid-area: bestsellers;
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+#main-section {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+#intro {
+    grid-area: intro;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas: "header header header header intro"
+        "nav nav nav nav intro"
+        "main main main main bestsellers"
+        "footer footer footer footer footer"
+}
